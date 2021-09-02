@@ -94,10 +94,7 @@ const signIn = (event) => {
 
 
   return (
-    <div className="App">
-    
-    {/*Caption input */}
-    
+    <div className="App">  
     
 
     <Modal
@@ -184,24 +181,16 @@ const signIn = (event) => {
          <Post key={id} postId={id} user={user} username={post.username} caption={post.caption} imageUrl={post.imageUrl}/>
        ))
      }
-     </div>
-     
-    
-     
+     </div>    
      </div>
 
      
-    
-
-
      {user?.displayName ? (
       <ImageUpload username={user.displayName}/>
     ):(
       <h3>Sorry you need to login to Upload</h3>
     )
     }
-     {/*Posts */}
-     {/*posts*/}
     </div>
   );
 }
@@ -209,5 +198,3 @@ const signIn = (event) => {
 export default App;
 
 
-
-// 02:50::12
